@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game_css.css">
+    <title>Quiz Game</title>
+</head>
+<body>
+    <div class="container">
+        <div id="hud">
+            <div class="hud-heading" id="progress">
+                <p id="question-heading">Question 1/3</p>
+                <div class="progress-bar">
+                    <div id="progressBarFull"></div>
+                </div>
+            </div>
+            <div class="hud-heading" id="score">
+                <p id="score-heading">Score</p>
+                <h1 id="score-number">0</h1>
+            </div>
+        </div>
+        <div id="game" class="game-container">
+            <h1 id="question">Which HTML tag is used to define an inline style?</h1>
+            <div class="choices">
+                <div class="choice-container" id="choiceA" data-number="1">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Choice 1</p>
+                </div>
+                <div class="choice-container" id="choiceB" data-number="2">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div class="choice-container" id="choiceC" data-number="3">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="choice-container" id="choiceD" data-number="4">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>  
+</body>
+</html>
